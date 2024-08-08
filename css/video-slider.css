@@ -1,0 +1,69 @@
+.video-slider-container {
+    position: relative;
+    width: 100%;
+    height: 83vh; 
+    overflow: hidden;
+    background: #fff;
+    /* padding: 10px;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-slider {
+    display: flex;
+    flex-direction: column; /* Stack slides vertically */
+    transition: transform 0.3s ease;
+}
+
+.video-slide {
+    flex: 0 0 auto;
+    margin-bottom: 10px; /* Space between slides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the content */
+    background: #f9f9f9; /* Background color for each slide */
+    /* padding: 10px;  */
+    border-radius: 5px; /* Rounded corners for each slide */
+}
+
+.video-slider img {
+    width: 100%; /* Adjust to your needs */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
+
+
+
+.prev-slide, .next-slide {
+    position: relative; /* Changed to relative positioning */
+    bottom: 0; /* Align to the bottom of the container */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 25px; /* Adjusted padding */
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Add some margin for spacing */
+}
+.prev-slide:hover, .next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between; /* Spread buttons horizontally */
+    margin-top: auto; /* Push to the bottom */
+}
+.video-slide h3 {
+    margin: 5px 0; /* Reduce the top and bottom margin */
+    font-size: 26px; /* Keep the font size smaller */
+    line-height: 30px; /* Adjust line-height for better spacing */
+    color: #333; /* Darker color for readability */
+}
